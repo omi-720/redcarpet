@@ -1,0 +1,259 @@
+.form-wrapper {
+    width: 100%;
+    height: auto;
+    gap: clamp(25px, 4vw, 50px);
+    padding-top: clamp(15px, 2.5vw, 30px);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: clamp(40px, 6vw, 80px);
+  }
+  
+  .form-section {
+    width: 100%;
+    max-width: min(1200px, 90vw);
+    background-image: url('./assets/background.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center clamp(30px, 5vw, 60px);
+    background-clip: border-box; /* Ensures background fills full box including padding */
+    overflow: visible; /* Allow background image to overflow if needed */
+    padding: clamp(60px, 10vw, 120px) clamp(20px, 3vw, 40px) clamp(50px, 8vw, 100px);
+    border-radius: clamp(15px, 2.5vw, 30px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(20px, 3vw, 40px);
+    position: relative;
+    min-height: 600px;
+  }
+  
+  
+  .form-prompt {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(20px, 2.7vw, 32px);
+    font-weight: 700;
+    line-height: 1.1;
+    z-index: 1;
+    margin-top: clamp(140px, 23vw, 280px);
+    margin-left: clamp(65px, 11vw, 130px);
+  }
+  
+  .form-card {
+    background: white;
+    padding: clamp(12px, 2vw, 24px);
+    border-radius: clamp(10px, 1.7vw, 20px);
+    box-shadow: 0 clamp(20px, 3.3vw, 40px) clamp(40px, 6.7vw, 80px) rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1.3vw, 16px);
+    z-index: 1;
+    line-height: 1;
+    position: relative;
+    top: clamp(-20px, -3.3vw, -40px);
+  }
+  
+  .form-field {
+    background: #F0F3FA;
+    border-radius: clamp(5px, 0.8vw, 10px);
+    padding: clamp(6px, 1vw, 12px) clamp(8px, 1.3vw, 16px);
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(12px, 1.2vw, 14px);
+    color: #2F4580;
+    opacity: 0.6;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: clamp(6px, 1vw, 12px);
+  }
+  
+  .submit-button {
+    background: #304680;
+    color: white;
+    font-weight: 600;
+    padding: clamp(6px, 1vw, 12px);
+    border-radius: clamp(5px, 0.8vw, 10px);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+  }
+  
+  .badge {
+    margin-top: clamp(30px, 5vw, 60px);
+    padding: clamp(5px, 0.8vw, 10px) clamp(12px, 2vw, 24px);
+    background: #2F4580;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(14px, 1.3vw, 16px);
+    font-weight: 600;
+    border-radius: clamp(50px, 8.3vw, 100px);
+  }
+
+
+
+
+  
+  /* Tablet Mode */
+  @media screen and (max-width: 1024px) {
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: none; /* Optional: disables grid layout */
+      gap: clamp(15px, 4vw, 25px);
+      background: none;
+      padding: clamp(0px, 0vw, 0px) clamp(20px, 4vw, 40px);
+    }
+
+
+  .form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+    .form-prompt {
+      text-align: center;
+      margin-left: 0;
+      margin-top: clamp(20px, 5vw, 40px);
+      color: #2E4580; 
+      font-family: 'Inter';
+      font-size: clamp(20px, 2.7vw, 32px);
+      font-weight: 700;
+      line-height: 1.1;
+     
+    }
+
+    .form-card {
+      top: clamp(-10px, -2vw, -20px);
+      width:70%;
+      min-height: clamp(500px, 90vh, 300px);
+      position: center;
+      align-self: center;
+      gap: 20px;
+    }
+
+    .form-field {
+      width: 100%;
+      box-sizing: border-box;
+      height: 50px;
+      padding: 20px;
+    }
+
+    .badge {
+      line-height: 1;
+    }
+
+  }
+  
+  /* MOBILE */
+  @media screen and (max-width: 480px) and (min-width: 320){
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 16px;
+    }
+  
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(10px, 3vw, 20px);
+      background: none;
+      padding: 0 clamp(12px, 4vw, 24px);
+      width: 100%;
+      min-height: none;
+    }
+  
+    .form-prompt {
+      text-align: center;
+      margin: clamp(10px, 3vw, 20px) 0;
+      color: #2E4580;
+      font-family: 'Inter';
+      font-size: clamp(16px, 4vw, 22px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+  
+    .form-card {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+     
+     
+      position: relative;
+    }
+  
+    .form-field {
+      width: 100%;
+     padding:n 'none';
+      font-size: 14px;
+      
+    }
+  
+    .badge {
+      font-size: 12px;
+      padding: 6px 12px;
+      line-height: 1.2;
+      border-radius: 999px;
+    }
+  }
+
+
+  /* Breakpoint for very large screens to prevent over-scaling */
+  @media screen and (min-width: 1400px) {
+    .form-wrapper {
+      gap: 50px;
+      padding-top: 30px;
+      margin-bottom: 80px;
+    }
+    
+    .form-section {
+      padding: 120px 40px 100px;
+      border-radius: 30px;
+      gap: 40px;
+      background-position: center 60px;
+    }
+    
+    .form-prompt {
+      font-size: 32px;
+      margin-top: 280px;
+      margin-left: 130px;
+    }
+    
+    .form-card {
+      padding: 24px;
+      border-radius: 20px;
+      gap: 16px;
+      top: -40px;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+    }
+    
+    .form-field {
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    
+    .form-row {
+      gap: 12px;
+    }
+    
+    .submit-button {
+      padding: 12px;
+      border-radius: 10px;
+    }
+    
+    .badge {
+      margin-top: 60px;
+      padding: 10px 24px;
+      font-size: 16px;
+      border-radius: 100px;
+    }
+  }

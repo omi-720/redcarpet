@@ -1,0 +1,233 @@
+/* General Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12vh 6vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Headings & Buttons */
+.hero-heading {
+  font-size: 80;
+  color: white;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  padding: 60;
+}
+
+.hero-subheading {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  color: white;
+  padding-bottom: 50;
+
+}
+
+.hero-buttons {
+  padding-top: 20;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Buttons */
+
+
+.hero-button-filled {
+  border: none;
+  background-color: #2e4580;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white; 
+}
+
+.hero-button-outline {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE STYLES */
+
+/* General Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12vh 6vw;
+  min-height: 100vh;
+  overflow: hidden;
+  }
+  
+  /* Headings & Buttons */
+  .hero-heading {
+  font-size: 80px;
+  color: white;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  padding: 60px;
+  }
+  
+  .hero-subheading {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  color: white;
+  padding-bottom: 50px;
+  }
+  
+  .hero-buttons {
+  padding-top: 20px;
+  display: flex;
+  gap: 1rem;
+  }
+  
+  /* Buttons */
+  .hero-button-filled {
+  border: none;
+  background-color: #2e4580;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  }
+  
+  .hero-button-outline {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  
+  /* RESPONSIVE STYLES */
+  
+  @media screen and (max-width: 834px) and (min-width: 480px) {
+    .hero-section {
+      padding: 10vh 5vw;
+      min-height: 80vh;
+    }
+  
+    .hero-heading {
+      font-size: 48px;
+      padding: 0px 0px;
+      line-height: 1.1;
+    }
+  
+    .hero-subheading {
+      font-size: 14px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      line-height: 1.1;
+    }
+  
+    .hero-buttons {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 240px;
+      margin: 0 auto;
+    }
+  
+    .hero-button-filled,
+    .hero-button-outline {
+      font-size: 0.65rem;
+      padding: 0.5rem 1rem;
+      max-width: 100px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  }
+  
+  
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 700px) {
+  .hero-section {
+    padding: 6vh 4vw;
+    min-height: 85vh;
+  }
+  
+  .hero-heading {
+    font-size: 36px;
+    padding: 20px 10px;
+    line-height: 1.3;
+    max-width: 95%;
+  }
+  
+  .hero-subheading {
+    font-size: 14px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 1.4;
+  }
+  
+  .hero-buttons {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .hero-button-filled,
+  .hero-button-outline {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero-section {
+    padding: 4vh 3vw;
+  }
+  
+  .hero-heading {
+    font-size: 28px;
+    padding: 15px 5px;
+  }
+  
+  .hero-subheading {
+    font-size: 13px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .hero-buttons {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,308 @@
+/* Base styles for desktop */
+.services-section {
+    width: 100%;
+    padding: 80px 5%;
+    background: #2E4580;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .services-heading {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .service-card {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px; /* Reduced from 40px for better spacing */
+    border-radius: 16px;
+    outline: 1px solid #E7E7E7;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.04);
+    flex-wrap: wrap; 
+    gap: 24px; /* gap affects both row and column spacing */
+    column-gap: 64px; /* ADD THIS LINE */
+  }
+  
+  .card-left,
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Reduced from 16px */
+    flex: 1;
+  }
+  
+  .card-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain; /* Prevents stretching */
+    flex-shrink: 0; /* Prevents shrinking */
+  }
+  
+  .icon-wrapper {
+    background: #ECF0F8;
+    padding: 17px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; /* Ensures wrapper doesn't stretch */
+  }
+  
+  .card-title {
+    font-size: 32px; /* Slightly reduced from 1.8rem */
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #2E4580;
+    line-height: 1.3; /* Reduced from 1.4 */
+  }
+  
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Reduced from 8px */
+  }
+  
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: #2E4580;
+    padding-right: 8px; /* Added padding to keep chevrons from edge */
+  }
+  
+  .item-title {
+    font-size: 18px; /* Slightly reduced from 1.1rem */
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #2E4580;
+    flex: 1; /* Takes available space */
+  }
+
+  .item-desc {
+    font-size: 16px; /* Slightly reduced from 1rem */
+    color: #999;
+    font-family: 'Inter';
+    line-height: 1.4;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Tablet mode - scales everything down proportionally */
+  @media screen and (max-width: 1024px) {
+    .services-section {
+      padding: 64px 4%;
+      gap: 64px;
+    }
+  
+    .services-heading {
+      font-size: 1.6rem;
+    }
+  
+    .services-wrapper {
+      gap: 32px;
+      padding: 32px;
+    }
+  
+    .service-card {
+      padding: 26px; /* Adjusted proportionally */
+      border-radius: 12.8px;
+      gap: 20px; /* Adjusted proportionally */
+    }
+  
+    .card-left,
+    .card-right {
+      gap: 11px; /* Adjusted proportionally */
+    }
+  
+    .card-icon {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .icon-wrapper {
+      padding: 13.6px;
+    }
+  
+    .card-title {
+      font-size: 1.36rem; /* Adjusted proportionally */
+      line-height: 1.3;
+    }
+  
+    .card-item {
+      gap: 5px; /* Adjusted proportionally */
+    }
+  
+    .item-header {
+      gap: 9.6px;
+      padding-right: 8px; /* Increased padding for better spacing */
+    }
+
+    .item-title {
+      font-size: 0.84rem; /* Adjusted proportionally */
+    }
+
+    .arrow {
+      width: 13.5px; /* Keep original size */
+      height: 6.75px; /* Keep original size */
+      margin-left: 8px; /* Adjusted proportionally */
+      margin-right: 4px; /* Keep margin from edge */
+    }
+  
+    .item-desc {
+      font-size: 0.76rem; /* Adjusted proportionally */
+    }
+  }
+  
+  /* Mobile mode - scales everything down even more */
+  @media screen and (max-width: 768px) {
+    .services-section {
+      padding: 48px 3%;
+      gap: 48px;
+    }
+  
+    .services-heading {
+      font-size: 1.2rem;
+    }
+  
+    .services-wrapper {
+      gap: 24px;
+      padding: 24px;
+    }
+  
+    .service-card {
+      padding: 20px; /* Adjusted for mobile */
+      border-radius: 9.6px;
+      gap: 16px; /* Adjusted for mobile */
+      flex-direction: column;
+    }
+  
+    .card-left,
+    .card-right {
+      gap: 8px; /* Adjusted for mobile */
+    }
+  
+    .card-icon {
+      width: 27px;
+      height: 27px;
+    }
+  
+    .icon-wrapper {
+      padding: 10.2px;
+    }
+  
+    .card-title {
+      font-size: 1.02rem; /* Adjusted for mobile */
+      line-height: 1.3;
+    }
+  
+    .card-item {
+      gap: 4px; /* Adjusted for mobile */
+    }
+  
+    .item-header {
+      gap: 8px;
+      padding-right: 6px; /* Sufficient padding for mobile */
+    }
+
+    .item-title {
+      font-size: 0.63rem; /* Adjusted for mobile */
+    }
+
+    .arrow {
+      width: 13.5px; /* Keep original size */
+      height: 6.75px; /* Keep original size */
+      margin-left: 6px; /* Adjusted for mobile */
+      margin-right: 3px; /* Keep margin from edge */
+    }
+  
+    .item-desc {
+      font-size: 0.57rem; /* Adjusted for mobile */
+    }
+  }
+  
+  /* Extra small mobile devices */
+  @media screen and (max-width: 480px) {
+    .services-section {
+      padding: 40px 2.5%;
+      gap: 40px;
+    }
+  
+    .services-heading {
+      font-size: 1rem;
+    }
+  
+    .services-wrapper {
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .service-card {
+      padding: 16px; /* Adjusted for small mobile */
+      border-radius: 8px;
+      gap: 12px; /* Adjusted for small mobile */
+    }
+  
+    .card-left,
+    .card-right {
+      gap: 6px; /* Adjusted for small mobile */
+    }
+  
+    .card-icon {
+      width: 22.5px;
+      height: 22.5px;
+    }
+  
+    .icon-wrapper {
+      padding: 8.5px;
+    }
+  
+    .card-title {
+      font-size: 0.85rem; /* Adjusted for small mobile */
+      line-height: 1.3;
+    }
+  
+    .card-item {
+      gap: 3px; /* Adjusted for small mobile */
+    }
+  
+    .item-header {
+      gap: 6px;
+      padding-right: 5px; /* Sufficient padding for small mobile */
+    }
+
+    .item-title {
+      font-size: 0.52rem; /* Adjusted for small mobile */
+    }
+
+    .arrow {
+      width: 7.5px; /* Keep original size */
+      height: 1.75px; /* Keep original size */
+      margin-left: 4px; /* Adjusted for small mobile */
+      margin-right: 6px; /* Keep margin from edge */
+    }
+  
+    .item-desc {
+      font-size: 0.48rem; /* Adjusted for small mobile */
+    }
+  }
